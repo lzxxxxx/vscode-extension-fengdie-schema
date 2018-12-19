@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "schema",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},{
+			"include": "#variables"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.schema",
+				"match": "\\b(Object|Array|String|Number|Image|description)\\b"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"match": "(\\w*\\b)\\((\\w*\\b)\\)",
+				"captures":{
+					"1": {
+						"name": "variable.parameter.schema"
+					},
+					"2": {
+						"name": "string.quoted.double.schema"
+					}
+				}
+			}]
+		},
+		"strings": {
+			"patterns": [{
+				"begin": "\"",
+				"end": "\"",
+				"patterns": [{
+					"name": "string.quoted.double.schema",
+					"match": "\\w"
+				}]
+			},{
+				"begin": "\\(",
+				"end": "\\)",
+				"patterns": [{
+					"name": "string.quoted.double.schema",
+					"match": "\\w"
+				}]
+			}]
+		}
+	},
+	"scopeName": "source.schema"
+}
