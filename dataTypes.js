@@ -1,0 +1,1 @@
+module.exports = ['Number','Object','String','Array','Image','Date','File','Box','Enum','Color','Boolean','Url','Text','RichText','description','default','if','source'];

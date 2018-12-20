@@ -15,12 +15,12 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.schema",
-				"match": "\\b(Object|Array|String|Number|Image|description)\\b"
+				"match": "\\b(Number|Object|String|Array|Image|Date|File|Box|Enum|Color|Boolean|Url|Text|RichText|description|default|if|source)\\b"
 			}]
 		},
 		"variables": {
 			"patterns": [{
-				"match": "(\\w*\\b)\\((\\w*\\b)\\)",
+				"match": "(\\w*\\b)\\(([^\\)]*)\\)",
 				"captures":{
 					"1": {
 						"name": "variable.parameter.schema"
@@ -33,13 +33,6 @@
 		},
 		"strings": {
 			"patterns": [{
-				"begin": "\"",
-				"end": "\"",
-				"patterns": [{
-					"name": "string.quoted.double.schema",
-					"match": "\\w"
-				}]
-			},{
 				"begin": "\\(",
 				"end": "\\)",
 				"patterns": [{

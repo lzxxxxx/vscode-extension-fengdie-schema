@@ -1,0 +1,31 @@
+{
+    "fengdie-schema": [{
+        "prefix": "description \"\"",
+        "scope": "schema",
+        "body": [
+          "description: \"\""
+        ],
+        "description": "fengdie description"
+    },{
+        "prefix": "default: \"\"",
+        "scope": "schema",
+        "body": [
+          "default: \"\""
+        ],
+        "description": "fengdie default"
+    },{
+        "prefix": "if: \"\"",
+        "scope": "schema",
+        "body": [
+          "if: \"\""
+        ],
+        "description": "fengdie if"
+    },{
+        "prefix": "source: \"\"",
+        "scope": "schema",
+        "body": [
+          "source: \"\""
+        ],
+        "description": "fengdie source"
+    }]
+}
