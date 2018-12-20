@@ -3,6 +3,7 @@
     "displayName": "fengdie-schema",
     "description": "凤蝶schema 语法高亮+自动补全",
     "version": "0.0.1",
+    "publisher": "zoeliu",
     "engines": {
         "vscode": "^1.30.0"
     },
